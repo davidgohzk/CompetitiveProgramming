@@ -3,17 +3,18 @@
 using namespace std;
 
 void solve() {
-    int i, j, k, n, a, b;
-    string s;
-    char c;
-    long long f;
-    bool x, y;
+    int i, j, k;
+    int n;
+    cin >> n;
+    for (i = 1; i <= n; i++) {
+        cout << i << " Abracadabra\n";
+    }
 }
 
 int main() {
 #ifndef ONLINE_JUDGE
-    // freopen("input.txt", "r", stdin);
-    // freopen("output.txt", "w", stdout);
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
     // freopen("error.txt", "w", stderr);
 #endif
     ios_base::sync_with_stdio(0);

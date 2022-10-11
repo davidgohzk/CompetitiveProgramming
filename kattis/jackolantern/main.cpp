@@ -4,10 +4,8 @@ using namespace std;
 
 void solve() {
     int i, j, k, n, a, b;
-    string s;
-    char c;
-    long long f;
-    bool x, y;
+    cin >> i >> j >> k;
+    cout << i * j * k;
 }
 
 int main() {

@@ -6,8 +6,10 @@ void solve() {
     int i, j, k, n, a, b;
     string s;
     char c;
-    long long f;
-    bool x, y;
+    cin >> c;
+    char d;
+    cin >> d;
+    cout << d << c;
 }
 
 int main() {

@@ -4,10 +4,10 @@ using namespace std;
 
 void solve() {
     int i, j, k, n, a, b;
-    string s;
-    char c;
-    long long f;
-    bool x, y;
+    string str;
+
+    cin >> str;
+    cout << str.substr(str.find('a'));
 }
 
 int main() {

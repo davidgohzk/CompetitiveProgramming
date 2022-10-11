@@ -6,8 +6,9 @@ void solve() {
     int i, j, k, n, a, b;
     string s;
     char c;
-    long long f;
-    bool x, y;
+    cin >> k;
+    cin >> n;
+    cout << k << " " << (n * (n + 3)) / 2 << "\n";
 }
 
 int main() {
@@ -20,7 +21,7 @@ int main() {
     cin.tie(0);
     cout.tie(0);
     int tc = 1;
-    // cin >> tc
+    cin >> tc;
     for (int t = 1; t <= tc; t++) {
         // cout << "Case #" << t << ": ";
 

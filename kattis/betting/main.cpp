@@ -7,7 +7,10 @@ void solve() {
     string s;
     char c;
     long long f;
-    bool x, y;
+
+    cin >> f;
+    cout << 100.0 / f << "\n"
+         << 100.0 / (100 - f);
 }
 
 int main() {

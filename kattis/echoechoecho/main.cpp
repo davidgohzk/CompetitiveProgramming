@@ -5,9 +5,9 @@ using namespace std;
 void solve() {
     int i, j, k, n, a, b;
     string s;
-    char c;
-    long long f;
-    bool x, y;
+
+    cin >> s;
+    cout << s << " " << s << " " << s;
 }
 
 int main() {
