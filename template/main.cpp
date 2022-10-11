@@ -21,6 +21,5 @@ int main() {
         // cout << "Case #" << t << ": ";
 
         solve();
-        cout << "hello world";
     }
 }
