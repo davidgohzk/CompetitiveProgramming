@@ -31,7 +31,20 @@ bool checkFP(float a, float b) {
 }
 
 void solve() {
-    // code
+    int N;
+    cin >> N;
+    double v, a, x, h1, h2, t, y;
+    RG(i, N) {
+        cin >> v >> a >> x >> h1 >> h2;
+        t = x / (v * cos(a * (M_PI / 180.0)));
+        y = v * t * sin(a * (M_PI / 180.0)) - 0.5 * 9.81 * t * t;
+        if (h1 + 1 < y && y + 1 < h2) {
+            cout << "Safe";
+        } else {
+            cout << "Not Safe";
+        }
+        cout << "\n";
+    }
 }
 
 int main() {

@@ -31,7 +31,19 @@ bool checkFP(float a, float b) {
 }
 
 void solve() {
-    // code
+    int a, s, p, x, y;
+    while (true) {
+        cin >> a;
+        if (a == -1) break;
+        p = 0;
+        s = 0;
+        RG(i, a) {
+            cin >> x >> y;
+            s += x * (y - p);
+            p = y;
+        }
+        cout << s << " miles\n";
+    }
 }
 
 int main() {

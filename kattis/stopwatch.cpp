@@ -31,7 +31,25 @@ bool checkFP(float a, float b) {
 }
 
 void solve() {
-    // code
+    int a;
+    cin >> a;
+    int prev = -1;
+    int s = 0;
+    int t;
+    RG(i, a) {
+        cin >> t;
+        if (prev == -1) {
+            prev = t;
+        } else {
+            s += t - prev;
+            prev = -1;
+        }
+    }
+    if (prev != -1) {
+        cout << "still running";
+    } else {
+        cout << s;
+    }
 }
 
 int main() {

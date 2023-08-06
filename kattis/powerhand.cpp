@@ -1,4 +1,3 @@
-#define _USE_MATH_DEFINES
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -31,7 +30,23 @@ bool checkFP(float a, float b) {
 }
 
 void solve() {
-    // code
+    char c;
+    unordered_map<char, int> m;
+    RG(i, 5) {
+        cin >> c;
+        if (m.find(c) == m.end()) {
+            m[c] = 1;
+        } else {
+            m[c]++;
+        }
+        cin >> c;
+    }
+    int k = 0;
+    for (auto e : m) {
+        k = max(k, e.second);
+    }
+
+    cout << k;
 }
 
 int main() {

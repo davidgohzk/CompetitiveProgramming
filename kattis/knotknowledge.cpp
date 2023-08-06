@@ -1,4 +1,3 @@
-#define _USE_MATH_DEFINES
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -10,15 +9,13 @@ using namespace std;
 #define hs unordered_set
 #define hss hs<string>
 #define hsi hs<int>
-#define msi map<string, int>
 
 #define F first
 #define S second
 #define PB push_back
 #define MP make_pair
 
-#define REP(i, a, b) for (int i = a; i <= b; ++i)
-#define RG(i, b) for (int i = 0; i < b; ++i)
+#define REP(i, a, b) for (int i = a; i <= b; i++)
 
 #define SQ(a) (a) * (a)
 
@@ -31,14 +28,25 @@ bool checkFP(float a, float b) {
 }
 
 void solve() {
-    // code
+    int a;
+    cin >> a;
+    hsi h;
+    int b;
+    REP(i, 1, a) {
+        cin >> b;
+        h.insert(b);
+    }
+    REP(i, 2, a) {
+        cin >> b;
+        h.erase(b);
+    }
+    cout << *begin(h);
 }
 
 int main() {
     ios::sync_with_stdio(0);
     cin.tie(0);
     cout.tie(0);
-    cout.precision(10);
     int tc = 1;
     // cin >> tc;
     for (int t = 1; t <= tc; t++) {

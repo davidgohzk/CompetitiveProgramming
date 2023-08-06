@@ -31,7 +31,22 @@ bool checkFP(float a, float b) {
 }
 
 void solve() {
-    // code
+    string a;
+    getline(cin, a);
+    int t, c, g;
+    t = c = g = 0;
+    for (char x : a) {
+        if (x == 'T') {
+            ++t;
+        }
+        if (x == 'C') {
+            ++c;
+        }
+        if (x == 'G') {
+            ++g;
+        }
+    }
+    cout << t * t + c * c + g * g + min(g, min(t, c)) * 7;
 }
 
 int main() {

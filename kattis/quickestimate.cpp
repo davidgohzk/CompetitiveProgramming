@@ -32,6 +32,14 @@ bool checkFP(float a, float b) {
 
 void solve() {
     // code
+    int a;
+    string b;
+    cin >> a;
+    getline(cin, b);
+    RG(i, a) {
+        getline(cin, b);
+        cout << b.length() << "\n";
+    }
 }
 
 int main() {

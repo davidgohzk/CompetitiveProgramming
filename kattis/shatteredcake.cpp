@@ -31,9 +31,16 @@ bool checkFP(float a, float b) {
 }
 
 void solve() {
-    // code
+    int w, n;
+    cin >> w >> n;
+    int s = 0;
+    int a, b;
+    RG(i, n) {
+        cin >> a >> b;
+        s += a * b;
+    }
+    cout << (int)s / w;
 }
-
 int main() {
     ios::sync_with_stdio(0);
     cin.tie(0);

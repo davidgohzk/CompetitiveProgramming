@@ -31,7 +31,15 @@ bool checkFP(float a, float b) {
 }
 
 void solve() {
-    // code
+    string a;
+    getline(cin, a);
+    char p = '\0';
+    for (char c : a) {
+        if (c != p) {
+            p = c;
+            cout << c;
+        }
+    }
 }
 
 int main() {

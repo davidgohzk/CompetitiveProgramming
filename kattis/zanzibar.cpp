@@ -31,7 +31,21 @@ bool checkFP(float a, float b) {
 }
 
 void solve() {
-    // code
+    int a;
+    cin >> a;
+    int t;
+    int s, p;
+    RG(i, a) {
+        t = -1;
+        s = 0;
+        p = 1;
+        while (t != 0) {
+            cin >> t;
+            s += max(0, t - 2 * p);
+            p = t;
+        }
+        cout << s << "\n";
+    }
 }
 
 int main() {

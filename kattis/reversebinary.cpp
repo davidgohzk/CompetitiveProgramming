@@ -32,6 +32,14 @@ bool checkFP(float a, float b) {
 
 void solve() {
     // code
+    int a;
+    cin >> a;
+    int b = 0;
+    while (a > 0) {
+        b = (b << 1) | (a & 1);
+        a = a >> 1;
+    }
+    cout << b;
 }
 
 int main() {

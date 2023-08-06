@@ -1,4 +1,3 @@
-#define _USE_MATH_DEFINES
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -10,7 +9,7 @@ using namespace std;
 #define hs unordered_set
 #define hss hs<string>
 #define hsi hs<int>
-#define msi map<string, int>
+#define msi map<string, i>
 
 #define F first
 #define S second
@@ -31,14 +30,25 @@ bool checkFP(float a, float b) {
 }
 
 void solve() {
-    // code
+    string a;
+    int c = 0;
+    RG(i, 5) {
+        getline(cin, a);
+        if (a.find("FBI") != a.npos) {
+            cout << i + 1 << " ";
+            c = 1;
+        }
+    }
+    if (c == 0) {
+        cout << "HE GOT AWAY!";
+        return;
+    }
 }
 
 int main() {
     ios::sync_with_stdio(0);
     cin.tie(0);
     cout.tie(0);
-    cout.precision(10);
     int tc = 1;
     // cin >> tc;
     for (int t = 1; t <= tc; t++) {

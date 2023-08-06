@@ -32,6 +32,21 @@ bool checkFP(float a, float b) {
 
 void solve() {
     // code
+    int N, Q;
+    cin >> N >> Q;
+    int l[N];
+    RG(i, N) {
+        cin >> l[i];
+    }
+    int a, b, c;
+    RG(i, Q) {
+        cin >> a >> b >> c;
+        if (a == 1) {
+            l[b - 1] = c;
+        } else {
+            cout << abs(l[b - 1] - l[c - 1]) << "\n";
+        }
+    }
 }
 
 int main() {

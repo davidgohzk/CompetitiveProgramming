@@ -31,7 +31,18 @@ bool checkFP(float a, float b) {
 }
 
 void solve() {
-    // code
+    int n, w, h;
+    cin >> n >> w >> h;
+    int a;
+    double m = hypot(w, h);
+    RG(i, n) {
+        cin >> a;
+        if (a <= hypot(w, h)) {
+            cout << "DA\n";
+        } else {
+            cout << "NE\n";
+        }
+    }
 }
 
 int main() {
